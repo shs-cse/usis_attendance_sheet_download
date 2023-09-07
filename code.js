@@ -19,7 +19,7 @@ function sleep(ms) {
 async function download_section_attendance_sheet(delay){
 
     for (let i=1; i<section_select.length; i++){
-        console.log("Downloading section: ", i, "...");
+        console.log("Downloading section: ", section_select.options[i].text, "...");
         
         section_select.selectedIndex = i;
         
